@@ -66,6 +66,11 @@ p {
     line-height: 1.4;
 }
 
+@keyframes color_change {
+	from { background-color: white}
+	to { background-color: #88ff03}
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -84,6 +89,10 @@ header nav {
 header nav a {
     text-decoration: none;
     color: black;
+}
+
+header nav a:hover {
+    font-weight: bold;
 }
 
 .top-image {
@@ -236,6 +245,19 @@ footer nav a {
     border: 2px solid black;
     padding: 10px 25px;
     font-size: 15px;
+}
+
+.about-content-box button:hover {
+    background: #88ff03;
+    animation: color_change ease-in;
+}
+
+.about-content-box button:active {
+    background: #32CD32;
+    -webkit-box-shadow: inset 0px 0px 7px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 7px #c1c1c1;
+    box-shadow: inset 0px 0px 7px #c1c1c1;
+    outline: none;
 }
 
 .work-together {
